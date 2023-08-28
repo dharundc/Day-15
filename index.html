@@ -3,62 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <title>Food Order Form</title>
+    <title>Document</title>
+    <style>
+      .container {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-group {
+        margin-bottom: 10px;
+      }
+      .result {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1>Food Order Form</h1>
-      <form id="foodOrderForm">
-        <form class="row g-3">
-          <div class="col-md-6">
-            <label for="firstname" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="firstname" />
-
-            <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="lastname" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="lastname" />
-
-          </div>
-          
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="address"
-            />
-          </div>
-         
-          
-         
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip" />
-          </div>
-          <label for="foodChoice">Food Choice:</label>
-            <select id="foodChoice" name="foodChoice">
-                <option value="pizza">Pizza</option>
-                <option value="burger">Burger</option>
-                <option value="pasta">Pasta</option>
-                <option value="salad">Salad</option>
-            </select>
-          
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-          
-        </form>
-      </form>
+      <h1>Calculator!!!!</h1>
+      <div class="form-group">
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" />
+      </div>
+      <div class="form-group">
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" />
+      </div>
+      <div class="form-group">
+        <button id="add">Add</button>
+        <button onclick="performCalculation('sub')">Sub</button>
+        <button onclick="performCalculation('mul')">Mul</button>
+        <button onclick="performCalculation('div')">Div</button>
+      </div>
+      <div class="result">
+        Result:
+        <span id="result"></span>
+      </div>
     </div>
-    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
